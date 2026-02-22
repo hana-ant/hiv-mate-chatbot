@@ -1,6 +1,5 @@
 # hiv-mate-chatbot
-💙 HIV Mate
-AI Companion for HIV Prevention & PrEP Support
+💙 HIV Mate - AI Companion to support HIV Prevention Programmes
 
 HIV Mate is a Gemini-powered AI chatbot designed to support HIV prevention programs and key populations with safe, accessible, and stigma-free health information.
 
