@@ -1,0 +1,40 @@
+{
+  "name": "hiv-mate-chatbot",
+  "version": "1.0.0",
+  "description": "HIV Mate - Warm, supportive AI chatbot for HIV prevention",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HanaAntonio/hiv-mate-chatbot.git"
+  },
+  "keywords": [
+    "hiv",
+    "chatbot",
+    "ai",
+    "gemini",
+    "prevention"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HanaAntonio/hiv-mate-chatbot/issues"
+  },
+  "homepage": "https://github.com/HanaAntonio/hiv-mate-chatbot#readme"
+}

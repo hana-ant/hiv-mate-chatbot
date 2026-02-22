@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#1A1A1A" />
+  <title>HIV Mate — HIV Prevention Support Chatbot</title>
+  <!-- Circular Favicon - Male avatar in yellow/gold with scale parameter -->
+  <link rel="icon" type="image/svg+xml" href="https://api.dicebear.com/9.x/notionists/svg?seed=HIVMate&backgroundColor=FFD600&scale=85" />
+  <!-- Circular Apple touch icon for mobile home screen -->
+  <link rel="apple-touch-icon" href="https://api.dicebear.com/9.x/notionists/svg?seed=HIVMate&backgroundColor=FFD600&scale=85" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-root">
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+      <div class="logo-section">
+        <div class="logo-mark">💛</div>
+        <h1 class="brand">HIV Mate</h1>
+      </div>
+
+      <div class="profile-card">
+        <div class="avatar">
+          <img src="https://api.dicebear.com/9.x/notionists/svg?seed=HIVMate&backgroundColor=FFD600" alt="HIV Mate Avatar" />
+        </div>
+        <h2 class="heading">Ask me anything about HIV Prevention</h2>
+        <button id="new-chat-btn" class="btn-primary">
+          <span>New Chat</span>
+          <span class="arrow">→</span>
+        </button>
+      </div>
+
+      <!-- History Section -->
+      <div class="history-section">
+        <div class="history-header">
+          <h3>Recent Questions</h3>
+          <button id="clear-history-btn" class="link-btn" title="Clear history">🗑️</button>
+        </div>
+        <div id="history-tags" class="tags"></div>
+      </div>
+
+      <footer class="sidebar-footer">
+        <p>💙 Supporting HIV prevention for all communities</p>
+      </footer>
+    </aside>
+
+    <!-- MAIN CHAT AREA -->
+    <main class="main">
+      <div class="topbar">
+        <h2 class="chat-title">HIV Mate</h2>
+        <button id="menu-btn" class="menu-btn" title="Menu">☰</button>
+      </div>
+
+      <section class="chat-container">
+        <div class="chat-intro">
+          <div class="intro-badge">Welcome to HIV Mate</div>
+          <p class="intro-text">Ask me anything about HIV prevention, testing, PrEP, or find friendly clinics. I'm here to support you with warm, non-judgmental answers.</p>
+        </div>
+
+        <div id="chat-box" class="chat-box" role="log" aria-live="polite"></div>
+
+        <form id="chat-form" class="chat-input-area">
+          <input
+            id="user-input"
+            type="text"
+            placeholder="Ask about HIV prevention, PrEP, testing..."
+            autocomplete="off"
+            aria-label="Message input"
+          />
+          <button id="send-btn" type="submit" class="send-btn" aria-label="Send message">
+            <span class="send-icon">➤</span>
+          </button>
+        </form>
+
+        <p class="disclaimer">
+          ⚠️ HIV Mate can make mistakes. Always verify health information with your clinician. 
+          <strong>For emergencies, call 911 or go to the nearest hospital.</strong>
+        </p>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
